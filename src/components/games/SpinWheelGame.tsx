@@ -138,7 +138,7 @@ export default function SpinWheelGame({ onReward }: Props) {
               return (
                 <text key={`t${i}`} x={tx} y={ty} textAnchor="middle" dominantBaseline="middle"
                   fill="#e2e8f0" fontSize="13" fontWeight="bold"
-                  stroke="#0d0d14" stroke-width="0.5" paint-order="stroke"
+                  stroke="#0d0d14" strokeWidth="0.5" paintOrder="stroke"
                   transform={`rotate(${rot}, ${tx}, ${ty})`}>
                   {s.label}
                 </text>
