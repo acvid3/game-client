@@ -10,11 +10,15 @@ const Layout = styled(GameLayout)`
   @media (max-width: 768px) { flex-direction: column; align-items: center; padding: 16px; gap: 20px; }
 `;
 const WheelSection = styled(GameSection)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (max-width: 768px) { 
-    padding-bottom: 20px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    padding-bottom: 24px; 
+    width: 100%;
+  }
+  @media (max-width: 480px) {
+    padding: 0 8px 24px;
   }
 `;
 
@@ -23,8 +27,8 @@ const WheelWrap = styled.div`
   width: 300px;
   height: 300px;
   margin: 0 auto;
-  @media (max-width: 768px) { width: 220px; height: 220px; }
-  @media (max-width: 480px) { width: 180px; height: 180px; }
+  @media (max-width: 768px) { width: 260px; height: 260px; }
+  @media (max-width: 480px) { width: 230px; height: 230px; }
 `;
 
 const Pointer = styled.div`
@@ -54,7 +58,7 @@ const Button = styled(motion.button)`
   -webkit-backdrop-filter: blur(12px);
   transition: background 0.2s, border-color 0.2s;
   &:hover { background: rgba(99, 102, 241, 0.18); border-color: rgba(99, 102, 241, 0.5); }
-  @media (max-width: 768px) { margin-top: 16px; padding: 12px 32px; font-size: 1rem; }
+  @media (max-width: 768px) { margin-top: 24px; padding: 14px 40px; font-size: 1.1rem; width: 100%; max-width: 260px; }
 `;
 
 const ResultBox = styled(motion.div)`
