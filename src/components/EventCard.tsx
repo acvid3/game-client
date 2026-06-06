@@ -50,6 +50,7 @@ const Card = styled(motion.div)`
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   transition: border-color 0.3s;
+  @media (max-width: 768px) { min-height: 160px; padding: 14px; }
   &:hover {
     border-color: rgba(99, 102, 241, 0.4);
   }

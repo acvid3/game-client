@@ -8,6 +8,7 @@ export const GameLayout = styled.div`
   padding: 32px;
   max-width: 800px;
   margin: 0 auto;
+  @media (max-width: 768px) { flex-direction: column; align-items: center; padding: 16px; gap: 20px; }
 `;
 
 export const GameSection = styled.div`
@@ -21,6 +22,7 @@ export const Legend = styled.div`
   min-width: 200px;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  @media (max-width: 768px) { width: 100%; min-width: unset; }
 `;
 
 export const LegendTitle = styled.div`

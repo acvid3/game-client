@@ -6,7 +6,9 @@ import styled from 'styled-components'
 import { playRoll, playWin, playLose, playJackpot, playDeal, playCashout, playMatch, playSpin, playTick } from '@/utils/sounds';
 import { GameLayout, GameSection, Legend, LegendTitle, LegendItem, LegendLabel, LegendValue, ColorDot } from './GameLegend';
 
-const Layout = GameLayout;
+const Layout = styled(GameLayout)`
+  @media (max-width: 768px) { flex-direction: column; align-items: center; padding: 16px; gap: 20px; }
+`;
 const WheelSection = GameSection;
 
 const WheelWrap = styled.div`
@@ -14,6 +16,8 @@ const WheelWrap = styled.div`
   width: 300px;
   height: 300px;
   margin: 0 auto;
+  @media (max-width: 768px) { width: 220px; height: 220px; }
+  @media (max-width: 480px) { width: 180px; height: 180px; }
 `;
 
 const Pointer = styled.div`

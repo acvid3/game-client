@@ -21,6 +21,7 @@ const DashboardContainer = styled.div`
   margin: 0 auto;
   padding: 20px;
   position: relative;
+  @media (max-width: 768px) { padding: 12px; }
   &::before {
     content: '';
     position: fixed;
@@ -48,12 +49,16 @@ const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  gap: 12px;
+  @media (max-width: 768px) { flex-direction: column; align-items: stretch; gap: 8px; margin-bottom: 16px; }
 `;
 
 const UserStats = styled.div`
   display: flex;
   gap: 12px;
   align-items: stretch;
+  @media (max-width: 768px) { flex-wrap: wrap; gap: 6px; }
+  @media (max-width: 480px) { gap: 4px; }
 `;
 
 const StatItem = styled.div`
@@ -68,6 +73,8 @@ const StatItem = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 56px;
+  @media (max-width: 768px) { padding: 6px 10px; min-height: 44px; }
+  @media (max-width: 480px) { padding: 4px 8px; min-height: 38px; }
 `;
 
 const StatValue = styled.div`
@@ -75,6 +82,8 @@ const StatValue = styled.div`
   font-weight: bold;
   color: #e2e8f0;
   line-height: 1;
+  @media (max-width: 768px) { font-size: 1rem; }
+  @media (max-width: 480px) { font-size: 0.9rem; }
 `;
 
 const StatLabel = styled.div`
@@ -97,6 +106,8 @@ const PremiumBadge = styled(motion.div)`
   display: flex;
   align-items: center;
   min-height: 56px;
+  @media (max-width: 768px) { padding: 6px 10px; min-height: 44px; font-size: 0.75rem; }
+  @media (max-width: 480px) { padding: 4px 8px; min-height: 38px; font-size: 0.7rem; }
 `;
 
 const PassIcon = styled(motion.button)`
@@ -114,6 +125,8 @@ const PassIcon = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) { padding: 6px 10px; min-height: 44px; font-size: 1rem; }
+  @media (max-width: 480px) { padding: 4px 8px; min-height: 38px; font-size: 0.9rem; }
   &:hover {
     border-color: rgba(99, 102, 241, 0.4);
     color: #e2e8f0;
@@ -134,6 +147,8 @@ const EventsGrid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 30px;
+  @media (max-width: 768px) { grid-template-columns: 1fr; gap: 12px; margin-top: 16px; }
+  @media (min-width: 769px) and (max-width: 1024px) { grid-template-columns: repeat(2, 1fr); }
 `;
 
 const XPProgressBar = styled.div`

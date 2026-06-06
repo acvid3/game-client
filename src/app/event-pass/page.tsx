@@ -38,6 +38,7 @@ const Header = styled.div`
   align-items: center;
   gap: 16px;
   padding: 24px 32px;
+  @media (max-width: 768px) { padding: 16px; }
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 `;
 

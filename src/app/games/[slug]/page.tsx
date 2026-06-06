@@ -46,6 +46,7 @@ const Header = styled.div`
   gap: 16px;
   padding: 24px 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  @media (max-width: 768px) { padding: 16px; gap: 10px; }
 `;
 
 const BackBtn = styled(motion.div)`
@@ -132,6 +133,7 @@ const BottomBar = styled.div`
   justify-content: center;
   gap: 20px;
   z-index: 20;
+  @media (max-width: 768px) { padding: 12px 16px; gap: 12px; flex-wrap: wrap; }
 `;
 
 const BottomBarText = styled.div`
