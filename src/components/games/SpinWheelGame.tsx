@@ -10,7 +10,12 @@ const Layout = styled(GameLayout)`
   @media (max-width: 768px) { flex-direction: column; align-items: center; padding: 16px; gap: 20px; }
 `;
 const WheelSection = styled(GameSection)`
-  @media (max-width: 768px) { padding-bottom: 20px; }
+  @media (max-width: 768px) { 
+    padding-bottom: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
 `;
 
 const WheelWrap = styled.div`
@@ -44,11 +49,12 @@ const Button = styled(motion.button)`
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 16px;
+  margin-top: 24px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: background 0.2s, border-color 0.2s;
   &:hover { background: rgba(99, 102, 241, 0.18); border-color: rgba(99, 102, 241, 0.5); }
+  @media (max-width: 768px) { margin-top: 16px; padding: 12px 32px; font-size: 1rem; }
 `;
 
 const ResultBox = styled(motion.div)`
