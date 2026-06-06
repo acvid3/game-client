@@ -215,6 +215,10 @@
   white-space: nowrap;
 }
 
+.rewardItem > span:last-child {
+  min-width: 100px;
+}
+
 .rewardLabel {
   color: #94a3b8;
   font-size: 11px;
