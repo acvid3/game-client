@@ -103,9 +103,8 @@ export function EventPass() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                <div className={styles.levelNumber}>Level {level.level}</div>
-                <div className={styles.rewards}>
+              <div className={styles.levelNumber}>Level {level.level}</div>
+              <div className={styles.rewards}>
                 <div className={styles.rewardItem}>
                   <span className={styles.rewardLabel}>Free:</span>
                   <span>{level.freeReward.coins} coins</span>
@@ -118,7 +117,6 @@ export function EventPass() {
                     {level.premiumReward.item && <span className={styles.rewardItemName}>{level.premiumReward.item}</span>}
                   </div>
                 )}
-              </div>
               </div>
               {isUnlocked && !isClaimed && (
                 <button onClick={() => { claimReward(index, 'free'); if (state.user.premium) claimReward(index, 'premium'); }} className={styles.claimButton}>
