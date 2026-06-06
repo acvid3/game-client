@@ -9,7 +9,9 @@ import { GameLayout, GameSection, Legend, LegendTitle, LegendItem, LegendLabel, 
 const Layout = styled(GameLayout)`
   @media (max-width: 768px) { flex-direction: column; align-items: center; padding: 16px; gap: 20px; }
 `;
-const WheelSection = GameSection;
+const WheelSection = styled(GameSection)`
+  @media (max-width: 768px) { padding-bottom: 20px; }
+`;
 
 const WheelWrap = styled.div`
   position: relative;
