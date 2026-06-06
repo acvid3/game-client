@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HelpCircle } from 'lucide-react';
+import { FaGift } from 'react-icons/fa';
 import { playCashout } from '@/utils/sounds';
 import { useGameContext } from '../context/GameContext';
 import { PASS_LEVELS, getCurrentLevelProgress } from '../utils/eventPassProgression';
@@ -108,13 +109,13 @@ export function EventPass() {
                 <div className={styles.rewardItem}>
                   <span className={styles.rewardLabel}>Free:</span>
                   <span>{level.freeReward.coins} coins</span>
-                  {level.freeReward.item && <span className={styles.rewardItemName}>{level.freeReward.item}</span>}
+                  {level.freeReward.item && <FaGift size={12} color="#818cf8" style={{ flexShrink: 0 }} />}
                 </div>
                 {state.user.premium && (
                   <div className={styles.rewardItem}>
                     <span className={styles.rewardLabel}>Premium:</span>
                     <span>{level.premiumReward.coins} coins</span>
-                    {level.premiumReward.item && <span className={styles.rewardItemName}>{level.premiumReward.item}</span>}
+                    {level.premiumReward.item && <FaGift size={12} color="#818cf8" style={{ flexShrink: 0 }} />}
                   </div>
                 )}
               </div>
