@@ -223,9 +223,6 @@
 .rewardItemName {
   color: #818cf8;
   font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .claimButton {
