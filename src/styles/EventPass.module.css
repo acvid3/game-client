@@ -15,7 +15,7 @@
   .levelCard { grid-template-columns: 80px 1fr auto; gap: 8px; padding: 10px 12px; }
   .levelNumber { min-width: unset; }
   .rewards { min-width: unset; width: 100%; }
-  .rewardItem { grid-template-columns: 50px 1fr; gap: 4px; }
+  .rewardItem { grid-template-columns: 50px 1fr auto; gap: 4px; }
   .premiumSection { flex-direction: column; }
   .levelsList { max-height: unset; overflow-y: unset; }
   .title { font-size: 20px; text-align: left; }
@@ -203,7 +203,7 @@
 
 .rewardItem {
   display: grid;
-  grid-template-columns: 55px 1fr;
+  grid-template-columns: 55px 1fr auto;
   align-items: center;
   gap: 8px;
   font-size: 13px;
@@ -212,6 +212,7 @@
 
 .rewardItem > span {
   text-align: left;
+  white-space: nowrap;
 }
 
 .rewardLabel {
