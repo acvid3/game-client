@@ -14,11 +14,11 @@ const WheelSection = styled(GameSection)`
   flex-direction: column;
   align-items: center;
   @media (max-width: 768px) { 
-    padding-bottom: 24px; 
+    padding-bottom: 40px; 
     width: 100%;
   }
   @media (max-width: 480px) {
-    padding: 0 8px 24px;
+    padding: 0 4px 40px;
   }
 `;
 
@@ -43,7 +43,10 @@ const Pointer = styled.div`
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 `;
 
-const Svg = styled.svg``;
+const Svg = styled.svg`
+  max-width: 100%;
+  height: auto;
+`;
 
 const Button = styled(motion.button)`
   background: rgba(99, 102, 241, 0.12);
@@ -116,7 +119,7 @@ export default function SpinWheelGame({ onReward }: Props) {
       <WheelSection>
         <WheelWrap>
           <Pointer />
-          <Svg viewBox="0 0 200 200" width="300" height="300">
+          <Svg viewBox="0 0 200 200" width="100%" height="100%">
             <defs>
               <filter id="frost">
                 <feGaussianBlur stdDeviation="6"/>
